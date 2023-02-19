@@ -12,8 +12,3 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const galleryRef = document.querySelector(".gallery");
-const imageMarkup = images.map((image)=>`<li class='image-item'><img src = ${image.url} alt = ${image.alt}></li>`)
-.join('');
-galleryRef.insertAdjacentHTML('beforeend',imageMarkup);
-console.log(imageMarkup);
